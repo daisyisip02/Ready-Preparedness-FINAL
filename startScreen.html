@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>
+            startScreen
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <link href="files/resources/lib/theme/jqm/jqm.css" rel="stylesheet" />
+        <link href="files/resources/lib/theme/flat-ui/flat-ui.css" rel="stylesheet" />
+        <link href="files/resources/lib/jquerymobile/1.4.2/jquery.mobile.structure-1.4.2.css"
+        rel="stylesheet" />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.9.1.js">
+        </script>
+        <script type="text/javascript">
+                    $(document).bind("mobileinit", function()
+            {
+                if (navigator.userAgent.toLowerCase().indexOf("android") != -1)
+                {
+                    $.mobile.defaultPageTransition = 'none';
+                    $.mobile.defaultDialogTransition = 'none';
+                }
+                if (navigator.userAgent.toLowerCase().indexOf("msie") != -1)
+                {
+                    $.mobile.allowCrossDomainPages = true;
+                    $.support.cors = true;
+                }
+            });
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.4.2/jquery.mobile-1.4.2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/js/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/appery.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/get_target_platform.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/cordova.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+        <script type="text/javascript" src="files/views/assets/js/services/service.js">
+        </script>
+    </head>
+    
+    <body>
+        <div data-role="page" style="min-height:480px;" dsid="startScreen" id="startScreen"
+        class="type-interior" data-theme="b">
+            <!-- mobileheader1 -->
+            <div data-role="header" data-position="fixed" data-add-back-btn="false" data-back-btn-text="Back"
+            data-theme="b" name="mobileheader1" id="startScreen_mobileheader1" class="startScreen_mobileheader1">
+                <h1 dsid="mobileheader1">
+                    Ready
+                </h1>
+            </div>
+            <!-- mobilecontainer1 -->
+            <div data-role="content" id="startScreen_mobilecontainer1" name="mobilecontainer1"
+            class="startScreen_mobilecontainer1 ui-content" dsid="mobilecontainer1" data-theme="b">
+                <link href="startScreen.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="startScreen.js">
+                </script>
+                <!-- mobilecollapsblock_3 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_3" name="mobilecollapsblock_3"
+                dsid="mobilecollapsblock_3" data-collapsed="true" data-theme="f" data-content-theme="b"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_3">
+                    <h3 id="startScreen_mobilecollapsblockheader_4" name="mobilecollapsblockheader_4"
+                    dsid="mobilecollapsblockheader_4">
+                        Prepare
+                    </h3>
+                    <!-- mobilelist_25 -->
+                    <ul data-role="listview" id="startScreen_mobilelist_25" class="startScreen_mobilelist_25"
+                    name="mobilelist_25" dsid="mobilelist_25" data-inset="true" data-theme="b" data-divider-theme="b"
+                    data-count-theme="b" style="">
+                        <!-- mobilelistitem_26 -->
+                        <li class="startScreen_mobilelistitem_26" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_26" name="mobilelistitem_26" dsid="mobilelistitem_26"
+                            tabindex="11" class="startScreen_mobilelistitem_26">
+                            <h3>Be Informed</h3>
+                            </a>
+                        </li>
+                        <!-- mobilelistitem_28 -->
+                        <li class="startScreen_mobilelistitem_28" data-icon="carat-r">
+                            <a id="startScreen_mobilelistitem_28" name="mobilelistitem_28" dsid="mobilelistitem_28"
+                            tabindex="11" class="startScreen_mobilelistitem_28">
+                            <h3>Emergency Kit</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- mobilecollapsblock_56 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_56" name="mobilecollapsblock_56"
+                dsid="mobilecollapsblock_56" data-collapsed="true" data-theme="g" data-content-theme="b"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_56">
+                    <h3 id="startScreen_mobilecollapsblockheader_57" name="mobilecollapsblockheader_57"
+                    dsid="mobilecollapsblockheader_57">
+                        Disaster Resources
+                    </h3>
+                    <!-- mobilecollapsibleset_126 -->
+                    <div data-role="collapsible-set" data-theme="b" data-content-theme=b data-collapsed-icon='plus'
+                    data-expanded-icon='minus' name="mobilecollapsibleset_126" id="startScreen_mobilecollapsibleset_126"
+                    dsid="mobilecollapsibleset_126" class="startScreen_mobilecollapsibleset_126">
+                        <!-- mobilecollapsblock_127 -->
+                        <div data-role="collapsible" id="startScreen_mobilecollapsblock_127" name="mobilecollapsblock_127"
+                        dsid="mobilecollapsblock_127" data-collapsed="true" data-theme="b" data-content-theme="b"
+                        data-iconpos='left' class="startScreen_mobilecollapsblock_127" reRender='mobilecollapsibleset_126'>
+                            <h3 id="startScreen_mobilecollapsblockheader_128" name="mobilecollapsblockheader_128"
+                            dsid="mobilecollapsblockheader_128">
+                                Apply for Assistance
+                            </h3>
+                            <!-- mobilelabel_136 -->
+                            <div name="mobilelabel_136" id="startScreen_mobilelabel_136" dsid="mobilelabel_136"
+                            data-role="appery_label" class="startScreen_mobilelabel_136">
+                                National Disaster and Risk Reduction and Management Council (NDRRMC) hotlines
+                            </div>
+                            <!-- mobilelabel_137 -->
+                            <div name="mobilelabel_137" id="startScreen_mobilelabel_137" dsid="mobilelabel_137"
+                            data-role="appery_label" class="startScreen_mobilelabel_137">
+                                Trunklines
+                            </div>
+                            <!-- mobilelabel_138 -->
+                            <div name="mobilelabel_138" id="startScreen_mobilelabel_138" dsid="mobilelabel_138"
+                            data-role="appery_label" class="startScreen_mobilelabel_138">
+                                911-5061 to 65
+                            </div>
+                            <!-- mobilelabel_139 -->
+                            <div name="mobilelabel_139" id="startScreen_mobilelabel_139" dsid="mobilelabel_139"
+                            data-role="appery_label" class="startScreen_mobilelabel_139">
+                                Operations Center
+                            </div>
+                            <!-- mobilelabel_140 -->
+                            <div name="mobilelabel_140" id="startScreen_mobilelabel_140" dsid="mobilelabel_140"
+                            data-role="appery_label" class="startScreen_mobilelabel_140">
+                                911-1406, 912-2665, 912-5668
+                            </div>
+                            <!-- mobilelabel_141 -->
+                            <div name="mobilelabel_141" id="startScreen_mobilelabel_141" dsid="mobilelabel_141"
+                            data-role="appery_label" class="startScreen_mobilelabel_141">
+                                Philippine National Police (PNP) Hotline Patrol
+                            </div>
+                            <!-- mobilelabel_142 -->
+                            <div name="mobilelabel_142" id="startScreen_mobilelabel_142" dsid="mobilelabel_142"
+                            data-role="appery_label" class="startScreen_mobilelabel_142">
+                                Hotline:
+                            </div>
+                            <!-- mobilelabel_143 -->
+                            <div name="mobilelabel_143" id="startScreen_mobilelabel_143" dsid="mobilelabel_143"
+                            data-role="appery_label" class="startScreen_mobilelabel_143">
+                                117, 723-0401
+                            </div>
+                            <!-- mobilelabel_144 -->
+                            <div name="mobilelabel_144" id="startScreen_mobilelabel_144" dsid="mobilelabel_144"
+                            data-role="appery_label" class="startScreen_mobilelabel_144">
+                                Text hotline:
+                            </div>
+                            <!-- mobilelabel_145 -->
+                            <div name="mobilelabel_145" id="startScreen_mobilelabel_145" dsid="mobilelabel_145"
+                            data-role="appery_label" class="startScreen_mobilelabel_145">
+                                0917-847-5757
+                            </div>
+                            <!-- mobilelabel_146 -->
+                            <div name="mobilelabel_146" id="startScreen_mobilelabel_146" dsid="mobilelabel_146"
+                            data-role="appery_label" class="startScreen_mobilelabel_146">
+                                Bureau of Fire Protection (NCR)
+                            </div>
+                            <!-- mobilelabel_147 -->
+                            <div name="mobilelabel_147" id="startScreen_mobilelabel_147" dsid="mobilelabel_147"
+                            data-role="appery_label" class="startScreen_mobilelabel_147">
+                                Direct line:
+                            </div>
+                            <!-- mobilelabel_148 -->
+                            <div name="mobilelabel_148" id="startScreen_mobilelabel_148" dsid="mobilelabel_148"
+                            data-role="appery_label" class="startScreen_mobilelabel_148">
+                                (02) 426-0219, (02) 426-3812, (02)426-0246
+                            </div>
+                            <!-- mobilelabel_149 -->
+                            <div name="mobilelabel_149" id="startScreen_mobilelabel_149" dsid="mobilelabel_149"
+                            data-role="appery_label" class="startScreen_mobilelabel_149">
+                                Metro Manila Development Authority (MMDA)
+                            </div>
+                            <!-- mobilelabel_150 -->
+                            <div name="mobilelabel_150" id="startScreen_mobilelabel_150" dsid="mobilelabel_150"
+                            data-role="appery_label" class="startScreen_mobilelabel_150">
+                                Hotline:
+                            </div>
+                            <!-- mobilelabel_151 -->
+                            <div name="mobilelabel_151" id="startScreen_mobilelabel_151" dsid="mobilelabel_151"
+                            data-role="appery_label" class="startScreen_mobilelabel_151">
+                                136
+                            </div>
+                            <!-- mobilelabel_152 -->
+                            <div name="mobilelabel_152" id="startScreen_mobilelabel_152" dsid="mobilelabel_152"
+                            data-role="appery_label" class="startScreen_mobilelabel_152">
+                                (02) 882-4154 to 74
+                            </div>
+                            <!-- mobilelabel_153 -->
+                            <div name="mobilelabel_153" id="startScreen_mobilelabel_153" dsid="mobilelabel_153"
+                            data-role="appery_label" class="startScreen_mobilelabel_153">
+                                (Metrobase) 255
+                            </div>
+                            <!-- mobilelabel_154 -->
+                            <div name="mobilelabel_154" id="startScreen_mobilelabel_154" dsid="mobilelabel_154"
+                            data-role="appery_label" class="startScreen_mobilelabel_154">
+                                (Road Safety) 319
+                            </div>
+                            <!-- mobilelabel_155 -->
+                            <div name="mobilelabel_155" id="startScreen_mobilelabel_155" dsid="mobilelabel_155"
+                            data-role="appery_label" class="startScreen_mobilelabel_155">
+                                (Public Safety) 374
+                            </div>
+                            <!-- mobilelabel_156 -->
+                            <div name="mobilelabel_156" id="startScreen_mobilelabel_156" dsid="mobilelabel_156"
+                            data-role="appery_label" class="startScreen_mobilelabel_156">
+                                (Road Emergency) 320
+                            </div>
+                            <!-- mobilelabel_157 -->
+                            <div name="mobilelabel_157" id="startScreen_mobilelabel_157" dsid="mobilelabel_157"
+                            data-role="appery_label" class="startScreen_mobilelabel_157">
+                                (02) 882-0925 (Flood Control)
+                            </div>
+                        </div>
+                        <!-- mobilecollapsblock_133 -->
+                        <div data-role="collapsible" id="startScreen_mobilecollapsblock_133" name="mobilecollapsblock_133"
+                        dsid="mobilecollapsblock_133" data-collapsed="true" data-theme="b" data-content-theme="b"
+                        data-iconpos='left' class="startScreen_mobilecollapsblock_133" reRender='mobilecollapsibleset_126'>
+                            <h3 id="startScreen_mobilecollapsblockheader_134" name="mobilecollapsblockheader_134"
+                            dsid="mobilecollapsblockheader_134">
+                                Recovery Tips
+                            </h3>
+                            <!-- mobilelabel_158 -->
+                            <div name="mobilelabel_158" id="startScreen_mobilelabel_158" dsid="mobilelabel_158"
+                            data-role="appery_label" class="startScreen_mobilelabel_158">
+                                Find out how to care for your safety after a disaster
+                            </div>
+                            <!-- mobilelabel_159 -->
+                            <div name="mobilelabel_159" id="startScreen_mobilelabel_159" dsid="mobilelabel_159"
+                            data-role="appery_label" class="startScreen_mobilelabel_159">
+                                Your first concern after a disaster is your family’s health and safety. You need
+                                to consider possible safety issues and monitor family health and well-being.
+                            </div>
+                            <!-- mobilelabel_160 -->
+                            <div name="mobilelabel_160" id="startScreen_mobilelabel_160" dsid="mobilelabel_160"
+                            data-role="appery_label" class="startScreen_mobilelabel_160">
+                                Aiding the Injured
+                            </div>
+                            <!-- mobilelabel_161 -->
+                            <div name="mobilelabel_161" id="startScreen_mobilelabel_161" dsid="mobilelabel_161"
+                            data-role="appery_label" class="startScreen_mobilelabel_161">
+                                Check for injuries. Do not attempt to move seriously injured persons unless they
+                                are in immediate danger of death or further injury. If you must move an unconscious
+                                person, first stabilize the neck and back, then call for help immediately.
+                            </div>
+                            <!-- mobilelabel_162 -->
+                            <div name="mobilelabel_162" id="startScreen_mobilelabel_162" dsid="mobilelabel_162"
+                            data-role="appery_label" class="startScreen_mobilelabel_162">
+                                *If the victim is not breathing, carefully position the victim for artificial respiration,
+                                clear the airway, and commence mouth-to-mouth resuscitation.
+                            </div>
+                            <!-- mobilelabel_163 -->
+                            <div name="mobilelabel_163" id="startScreen_mobilelabel_163" dsid="mobilelabel_163"
+                            data-role="appery_label" class="startScreen_mobilelabel_163">
+                                *Maintain body temperature with blankets. Be sure the victim does not become overheated.
+                            </div>
+                            <!-- mobilelabel_164 -->
+                            <div name="mobilelabel_164" id="startScreen_mobilelabel_164" dsid="mobilelabel_164"
+                            data-role="appery_label" class="startScreen_mobilelabel_164">
+                                *Never try to feed liquids to an unconscious person.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobilecollapsblock_37 -->
+                <div data-role="collapsible" id="startScreen_mobilecollapsblock_37" name="mobilecollapsblock_37"
+                dsid="mobilecollapsblock_37" data-collapsed="false" data-theme="a" data-content-theme="a"
+                data-iconpos='left' class="startScreen_mobilecollapsblock_37">
+                    <h3 id="startScreen_mobilecollapsblockheader_38" name="mobilecollapsblockheader_38"
+                    dsid="mobilecollapsblockheader_38">
+                        About READY
+                    </h3>
+                    <!-- mobilelabel_40 -->
+                    <div name="mobilelabel_40" id="startScreen_mobilelabel_40" dsid="mobilelabel_40"
+                    data-role="appery_label" class="startScreen_mobilelabel_40">
+                        READY App Mission
+                    </div>
+                    <!-- mobilelabel_42 -->
+                    <div name="mobilelabel_42" id="startScreen_mobilelabel_42" dsid="mobilelabel_42"
+                    data-role="appery_label" class="startScreen_mobilelabel_42">
+                        READY mission is to support Filipinos and first responders to ensure that as a nation
+                        we work together to build, sustain, and improve our capability to prepare for, protect
+                        against, respond to, recover from, and mitigate all hazards.
+                    </div>
+                    <!-- mobilelabel_43 -->
+                    <div name="mobilelabel_43" id="startScreen_mobilelabel_43" dsid="mobilelabel_43"
+                    data-role="appery_label" class="startScreen_mobilelabel_43">
+                        Ready App
+                    </div>
+                    <!-- mobilelabel_44 -->
+                    <div name="mobilelabel_44" id="startScreen_mobilelabel_44" dsid="mobilelabel_44"
+                    data-role="appery_label" class="startScreen_mobilelabel_44">
+                        We recognize people are on the go more than ever and need vital preparedness and
+                        disaster recovery information through many modes of communication. Ready App is just
+                        one way the agency is seeking to reach citizens before, during and after disaster
+                        strikes.
+                    </div>
+                </div>
+            </div>
+            <!-- mobilefooter1 -->
+            <div data-role="footer" data-position="fixed" class="startScreen_mobilefooter1"
+            name="mobilefooter1" dsid="mobilefooter1" id="startScreen_mobilefooter1" data-theme="b">
+            </div>
+        </div>
+    </body>
+
+</html>
